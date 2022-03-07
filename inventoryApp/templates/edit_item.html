@@ -5,8 +5,8 @@
     <div class="container">
 
         <form method="POST">
+            <h2>Editing Item</h2>
             {% csrf_token %}
-            <h2>Add Item</h2>
             {% for field in form %}
             <div class="form-group row">
                 <label for="id_{{field.name}}" class="col-2 col-form-label">
@@ -18,7 +18,7 @@
             </div>
             {% endfor %}
             <br>
-            <button type="submit" class="btn btn-primary" name="button">Add Device</button>
+            <button type="submit" class="btn btn-primary" name="button">Edit Device</button>
             <br>
         </form>
 
